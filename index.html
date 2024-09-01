@@ -1,3 +1,12 @@
+To meet the task requirements, each `.nav-link` should have an `href` attribute that correctly links to the corresponding `.main-section`'s `id`. 
+
+There are two corrections needed in your current HTML:
+1. In the `<a>` tag for "Declaring Variables", the `href` value should match the `id` value "Declaring_Variables" (use underscores instead of spaces).
+2. In the `<a>` tag for "Variable Scope", the `href` value is missing the `#` and should be `#Variable_Scope`.
+
+Here's the corrected HTML:
+
+```html
 <!DOCTYPE html>
 <html>
   <body>
@@ -100,16 +109,19 @@
           <li></li>
           <li></li>
         </ul>
-        <nav id="navbar">
-          <header>
-          </header>
-          <a class="nav-link"></a>
-          <a class="nav-link"></a>
-          <a class="nav-link"></a>
-          <a class="nav-link"></a>
-          <a class="nav-link"></a>
-        </nav>
       </section>
+
+      <!-- Navbar Section -->
+      <nav id="navbar">
+        <header>
+          <!-- Optionally add a title or logo here -->
+        </header>
+        <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+        <a class="nav-link" href="#Hello_World">Hello World</a>
+        <a class="nav-link" href="#Variables">Variables</a>
+        <a class="nav-link" href="#Declaring_Variables">Declaring Variables</a>
+        <a class="nav-link" href="#Variable_Scope">Variable Scope</a>
+      </nav>
     </main>
   </body>
 </html>
